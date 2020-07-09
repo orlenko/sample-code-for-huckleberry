@@ -1,5 +1,5 @@
 from time import time
-from unittest import TestCase
+from unittest import TestCase, main
 
 from counter import Counter
 
@@ -107,3 +107,6 @@ class TestCounter(TestCase):
         print('Registered %s events in %0.3f msec' % (counter.get_count(MILLION), (time() - start) * 1000))
         self.assertGreater(counter.get_count(MILLION), 100)  # The test might run on a slow machine.
 
+
+if __name__ == '__main__':
+    main()

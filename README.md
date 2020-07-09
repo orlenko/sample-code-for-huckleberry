@@ -13,6 +13,19 @@ is not actual production code, it was written to approximate
 production quality. Specifically, the comments, the documentation, and the unit tests
 were written at a level that I consider appropriate in a production system.
 
+## Running tests
+
+To run all tests, please run from the current directory:
+```shell script
+python -m unittest discover test
+```
+
+To run tests for a particular module, please run from current directory:
+```shell script
+PYTHONPATH=`pwd` python test/test_counter.py
+PYTHONPATH=`pwd` python test/test_elevator.py
+```
+
 ## Event Counter 
 
 
